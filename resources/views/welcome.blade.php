@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel 1905
+                    我家宝贝超可爱
                 </div>
 
                 <div class="links">
