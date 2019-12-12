@@ -25,3 +25,4 @@ class WxControlle extends Controller
             die("not ok");
         }
 }
+}
