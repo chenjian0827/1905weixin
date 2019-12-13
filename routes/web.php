@@ -15,5 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/sd', function () {
+    echo 123;
+});
+
 //微信开发
-Route::get('/wx','WeiXin\WxController@wechat');
+Route::get('/wx','Wx\WxController@wechat');
+Route::get('/aa',function (){
+    echo 123;
+});
