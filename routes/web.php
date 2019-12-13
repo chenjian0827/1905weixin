@@ -21,6 +21,7 @@ Route::get('/sd', function () {
 
 //微信开发
 Route::get('/wx','Wx\WxController@wechat');
+Route::post('/wx','Wx\WxController@aaa');
 Route::get('/aa',function (){
     echo 123;
 });
