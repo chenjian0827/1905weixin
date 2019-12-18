@@ -25,3 +25,4 @@ Route::post('/wx','Wx\WxController@aaa');
 Route::get('/aa',function (){
     echo 123;
 });
+

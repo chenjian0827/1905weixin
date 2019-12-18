@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class WxController extends Controller
 {
-
+7 
     /**
      * 处理接入
      */
@@ -27,6 +27,22 @@ class WxController extends Controller
         } else {
             die("not ok");
         }
+
+       /**
+       *接收微信推送事件
+        */
+        public function receiv()
+        {
+            //将接收的数据记录到日志文件
+            $log_file = "wx.log";
+            
+
+
+
+
+
+
+
         /*
             获取用户基本信息
         */
@@ -44,6 +60,8 @@ class WxController extends Controller
 
 
 
-
-
+    /**
+     *菜单
+     *//
+        public function
 }
