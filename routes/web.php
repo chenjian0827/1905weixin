@@ -18,33 +18,7 @@ Route::get('/', function () {
 Route::get('/info', function () {
     phpinfo();
 });
+// 微信开发
 
-Route::get('/test/hello','Test\TestController@hello');
-
-Route::any('user/index','User\\LoginController@index');
-Route::any('user/addUser','User\\LoginController@addUser');
-Route::any('user/redis1','User\\LoginController@redis1');
-Route::any('user/redis2','User\\LoginController@redis2');
-Route::any('user/baidu','User\\LoginController@baidu');
-
-
-
-//微信开发
-//Route::get('/wx','WeiXin\WxController@wx');
-Route::post('/wx','WeiXin\WxController@receiv');
-
-
-
-//微信开发
-Route::get('/wx','Wx\WxController@wechat');
-Route::post('/wx','Wx\WxController@receiv');         //接受微信推送事件
-Route::get('/wx/media','Wx\WxController@getMedia');  //获取临时素材
-Route::get('/wx/test','Wx\WxController@test');       //获取临时素材
-Route::get('/wx/menu','Wx\WxController@createMenu'); //创建菜单
-
-Route::post('/wx','Wx\WxController@receiv');        //接收微信的推送事件
-Route::get('/wx/media','Wx\WxController@getMedia');        //获取临时素材
-Route::get('/wx/flush/access_token','Wx\WxController@flushAccessToken');        //刷新access_token
-Route::get('/wx/menu','Wx\WxController@createMenu');        //创建菜单
-//微信公众号
-Route::get('/vote','VoteController@index');        //微信投票
+Route::get('/Wx','weixin\Wxcontroller@wechat');
+Route::post('/Wx','weixin\Wxcontroller@receiv');    //接受微信的推送事件
